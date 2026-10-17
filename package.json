@@ -1,0 +1,21 @@
+{
+  "name": "ecofresh",
+  "version": "1.0.0",
+  "description": "EcoFresh — інтернет-магазин екологічних продуктів (Lab 5: full-stack with vibe coding)",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "Михайловський Д.А.",
+  "license": "MIT"
+}

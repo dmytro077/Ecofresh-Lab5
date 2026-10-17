@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оформлення — EcoFresh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">Eco<span>Fresh</span></a>
+      <button class="menu-toggle" aria-label="Меню">☰</button>
+      <nav class="nav">
+        <a href="/">Головна</a>
+        <a href="/catalog.html">Каталог</a>
+        <a href="/account.html">Кабінет</a>
+      </nav>
+      <div class="header-actions">
+        <button class="cart-btn" onclick="location.href='/cart.html'" aria-label="Кошик">
+          🛒 <span class="cart-badge" style="display:none">0</span>
+        </button>
+        <button class="user-btn" aria-label="Профіль">👤</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h1 style="margin-bottom:1.25rem">Оформлення замовлення</h1>
+    <form id="checkout-form" class="auth-card" style="max-width:560px">
+      <div class="form-group">
+        <label>Ім'я *</label>
+        <input type="text" name="name" required minlength="2" placeholder="Олена">
+      </div>
+      <div class="form-group">
+        <label>Телефон *</label>
+        <input type="tel" name="phone" required placeholder="+380XXXXXXXXX">
+      </div>
+      <div class="form-group">
+        <label>Email *</label>
+        <input type="email" name="email" required placeholder="email@example.com">
+      </div>
+      <div class="form-group">
+        <label>Адреса доставки *</label>
+        <textarea name="address" rows="2" required placeholder="м. Київ, вул. Хрещатик, 1, кв. 10"></textarea>
+      </div>
+      <div class="form-group">
+        <label>Спосіб доставки</label>
+        <select name="delivery">
+          <option value="nova_poshta">Нова Пошта (50 ₴)</option>
+          <option value="courier">Кур'єр (80 ₴)</option>
+          <option value="pickup">Самовивіз (безкоштовно)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Оплата</label>
+        <select name="payment">
+          <option value="cash">При отриманні</option>
+          <option value="card">Картка онлайн</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Підтвердити замовлення</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-bottom">© 2026 EcoFresh</div>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

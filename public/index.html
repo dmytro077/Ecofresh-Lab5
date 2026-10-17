@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoFresh — екологічні продукти від фермерів</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">Eco<span>Fresh</span></a>
+      <button class="menu-toggle" aria-label="Меню">☰</button>
+      <nav class="nav">
+        <a href="/" class="active">Головна</a>
+        <a href="/catalog.html">Каталог</a>
+        <a href="/account.html">Кабінет</a>
+      </nav>
+      <div class="header-actions">
+        <button class="cart-btn" onclick="location.href='/cart.html'" aria-label="Кошик">
+          🛒 <span class="cart-badge" style="display:none">0</span>
+        </button>
+        <button class="user-btn" aria-label="Профіль">👤</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Свіжі екологічні продукти<br>від українських фермерів</h1>
+      <p>Прозоре походження, органічні сертифікати та доставка до дверей. Підтримуйте локальне виробництво.</p>
+      <a href="/catalog.html" class="btn btn-primary">До каталогу</a>
+      <a href="/register.html" class="btn btn-secondary">Створити акаунт</a>
+    </section>
+
+    <section>
+      <h2 style="margin-bottom:1.25rem">Популярні товари</h2>
+      <div class="product-grid" id="home-products">
+        <p>Завантаження...</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <h4>EcoFresh</h4>
+        <p>Екологічні продукти від перевірених фермерів України.</p>
+      </div>
+      <div>
+        <h4>Покупцям</h4>
+        <a href="/catalog.html">Каталог</a>
+        <a href="/cart.html">Кошик</a>
+        <a href="/account.html">Особистий кабінет</a>
+      </div>
+      <div>
+        <h4>Контакти</h4>
+        <a href="mailto:hello@ecofresh.ua">hello@ecofresh.ua</a>
+        <p>+380 44 123 45 67</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 EcoFresh. Лабораторна робота №5</div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

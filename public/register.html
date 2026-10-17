@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Реєстрація — EcoFresh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">Eco<span>Fresh</span></a>
+      <nav class="nav">
+        <a href="/">Головна</a>
+        <a href="/catalog.html">Каталог</a>
+      </nav>
+      <div class="header-actions">
+        <button class="cart-btn" onclick="location.href='/cart.html'">🛒 <span class="cart-badge" style="display:none">0</span></button>
+        <button class="user-btn">👤</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="auth-card" style="max-width:420px;margin:2rem auto">
+      <h2>Реєстрація</h2>
+      <form id="register-form">
+        <div class="form-group">
+          <label>Ім'я</label>
+          <input type="text" name="name" required minlength="2" placeholder="Олена">
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" name="email" required placeholder="email@example.com">
+        </div>
+        <div class="form-group">
+          <label>Пароль (мін. 8 символів)</label>
+          <input type="password" name="password" required minlength="8">
+        </div>
+        <div class="form-group">
+          <label>Підтвердження пароля</label>
+          <input type="password" name="confirm" required minlength="8">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Створити акаунт</button>
+      </form>
+      <p style="margin-top:1rem;text-align:center;font-size:0.9rem">
+        Вже є акаунт? <a href="/login.html">Увійти</a>
+      </p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-bottom">© 2026 EcoFresh</div>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>
